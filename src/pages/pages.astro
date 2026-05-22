@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro'
+import generatedPages from '../config/generated-pages.json'
+
+const pages = generatedPages as Array<{ href: string; title?: string; label?: string }>
+---
+
+<Layout title="Pages" description="Generated site pages">
+  <section class="ac-generated-page">
+    <header class="ac-generated-page__header">
+      <p class="ac-generated-page__eyebrow">Pages</p>
+      <h1>Pages</h1>
+      <p>Generated pages and evergreen site information.</p>
+    </header>
+    {
+      pages.length > 0 ? (
+        <ul class="ac-generated-page__list">
+          {pages.map((page) => (
+            <li>
+              <a href={page.href}>{page.label ?? page.title ?? page.href}</a>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p>No generated pages have been added yet.</p>
+      )
+    }
+  </section>
+</Layout>
+
+<style>
+  .ac-generated-page {
+    width: min(100% - 2rem, 48rem);
+    margin: 0 auto;
+    padding: 5rem 0;
+  }
+
+  .ac-generated-page__header {
+    margin-bottom: 2rem;
+  }
+
+  .ac-generated-page__eyebrow {
+    color: rgb(var(--ac-primary));
+    font-weight: var(--ac-font-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .ac-generated-page__list {
+    display: grid;
+    gap: 0.75rem;
+    padding-left: 1.25rem;
+  }
+
+  .ac-generated-page a {
+    color: rgb(var(--ac-primary));
+  }
+</style>

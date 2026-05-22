@@ -1,0 +1,87 @@
+---
+import Layout from '../layouts/Layout.astro'
+
+const pageTitle = 'About the Publication'
+const pageDescription = 'A concise introduction to Astrolify Load Test 01 20260522-042729105 and the editorial work it publishes.'
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <article class="ac-generated-page">
+    <header class="ac-generated-page__header">
+      <p class="ac-generated-page__eyebrow">Pages</p>
+      <h1>{pageTitle}</h1>
+      <p>{pageDescription}</p>
+    </header>
+
+    <section class="ac-generated-page__section">
+      <h2>What this publication covers</h2>
+      <p>Astrolify Load Test 01 20260522-042729105 exists to publish launch notes, feature explanations, product updates, support-facing information, and related editorial material.</p>
+      <p>It is aimed at people evaluating the product, comparing options, or using the service.</p>
+    </section>
+
+    <section class="ac-generated-page__section">
+      <h2>Editorial standards and selection</h2>
+      <p>We prefer clear, practical language and content that helps readers understand the site, its topic, and the surrounding context.</p>
+      <p>New pages, revisions, and updates are chosen to keep the site useful even when the brand, team, or business details are still evolving.</p>
+    </section>
+
+    <section class="ac-generated-page__section">
+      <h2>Publishing scope and ongoing updates</h2>
+      <p>Astrolify Load Test 01 20260522-042729105 is expected to publish launch notes, feature explanations, product updates, support-facing information, and related editorial material.</p>
+      <p>The site can cover introduce the product, explain the value proposition, and publish supporting product information.</p>
+      <p>That usually includes product pages, launch notes, support material, and editorial updates that help people evaluate the service.</p>
+    </section>
+
+    <section class="ac-generated-page__section">
+      <h2>How updates are handled</h2>
+      <p>If a page becomes outdated, it can be revised or replaced without changing the underlying purpose of the site.</p>
+      <p>Readers should expect the content to evolve as the publication matures, especially once actual brand details, authors, or contact routes are added.</p>
+    </section>
+
+    <section class="ac-generated-page__section">
+      <h2>Editorial context for this niche</h2>
+      <p>The publication should support product discovery, documentation, and updates without inventing product capabilities or support promises.</p>
+    </section>
+    <aside class="ac-generated-page__notice">
+      <p>This starter page is generated as a baseline and should be reviewed and customized before being relied on as production legal or business copy.</p>
+    </aside>
+  </article>
+</Layout>
+
+<style>
+  .ac-generated-page {
+    width: min(100% - 2rem, 48rem);
+    margin: 0 auto;
+    padding: 5rem 0;
+  }
+
+  .ac-generated-page__header,
+  .ac-generated-page__section,
+  .ac-generated-page__notice {
+    margin-bottom: 2rem;
+  }
+
+  .ac-generated-page__eyebrow {
+    color: rgb(var(--ac-primary));
+    font-weight: var(--ac-font-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .ac-generated-page h1,
+  .ac-generated-page h2 {
+    color: var(--ac-text);
+  }
+
+  .ac-generated-page p {
+    color: var(--ac-text-muted);
+    line-height: var(--ac-leading-relaxed);
+  }
+
+  .ac-generated-page__notice {
+    border: 0.0625rem solid var(--ac-border-color);
+    border-radius: var(--ac-rounded-xl);
+    padding: 1rem;
+    background: var(--ac-bg-subtle);
+  }
+</style>

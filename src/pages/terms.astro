@@ -1,0 +1,105 @@
+---
+import Layout from '../layouts/Layout.astro'
+
+const pageTitle = 'Terms of Use'
+const pageDescription = 'A simple terms page covering access, acceptable use, ownership, and legal disclaimers.'
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <article class="ac-generated-page">
+    <header class="ac-generated-page__header">
+      <p class="ac-generated-page__eyebrow">Pages</p>
+      <h1>{pageTitle}</h1>
+      <p>{pageDescription}</p>
+    </header>
+
+    <section class="ac-generated-page__section">
+      <h2>When the terms apply</h2>
+      <p>By using Astrolify Load Test 01 20260522-042729105, visitors agree to these terms as they are published from time to time.</p>
+      <p>If a visitor does not agree with the terms, the site should not present itself as intended for continued use.</p>
+    </section>
+
+    <section class="ac-generated-page__section">
+      <h2>Permitted use</h2>
+      <p>The website may be used to read published material, review public information, and engage with the site in a normal and lawful way.</p>
+      <p>Readers should avoid automated scraping, disruption, abusive use, or any activity that interferes with the site or its audience.</p>
+    </section>
+
+    <section class="ac-generated-page__section">
+      <h2>Ownership of the site and its materials</h2>
+      <p>Text, layout, and site-specific assets belong to the site owner or the relevant rights holder unless the page says otherwise.</p>
+      <p>Readers should not assume that a public page grants any licence to reuse the material outside ordinary viewing or sharing.</p>
+    </section>
+
+    <section class="ac-generated-page__section">
+      <h2>Availability and accuracy</h2>
+      <p>The site may change, move, or disappear without notice, and published information may not always be complete or current.</p>
+      <p>Visitors should treat the site as a public information source rather than a guaranteed record of every fact or event.</p>
+    </section>
+
+    <section class="ac-generated-page__section">
+      <h2>Links, embeds, and outside providers</h2>
+      <p>External links are provided for convenience, and the site does not control the content, behaviour, or policies of external providers.</p>
+      <p>If the site later embeds video, maps, analytics, or other hosted tools, those services can have their own terms and privacy handling.</p>
+    </section>
+
+    <section class="ac-generated-page__section">
+      <h2>Risk, reliance, and limitations</h2>
+      <p>The site makes no warranty that every page is complete, current, or suitable for any specific purpose.</p>
+      <p>Visitors should make their own judgment before relying on published material, especially where the content touches regulated, financial, or time-sensitive topics.</p>
+    </section>
+
+    <section class="ac-generated-page__section">
+      <h2>Changes to these terms</h2>
+      <p>These terms may be updated when the site changes, but the published version should remain the one that governs current use.</p>
+      <p>Material changes should be reflected before a new feature, content type, or workflow goes live.</p>
+    </section>
+
+    <section class="ac-generated-page__section">
+      <h2>Which law applies</h2>
+      <p>If a governing law clause is needed later, it should use a real jurisdiction and not a placeholder like [JURISDICTION] unless the site has been finalized for that jurisdiction.</p>
+      <p>Until then, this section should remain a generic placeholder for the legal review process.</p>
+    </section>
+    <aside class="ac-generated-page__notice">
+      <p>This starter page is generated as a baseline and should be reviewed and customized before being relied on as production legal or business copy.</p>
+    </aside>
+  </article>
+</Layout>
+
+<style>
+  .ac-generated-page {
+    width: min(100% - 2rem, 48rem);
+    margin: 0 auto;
+    padding: 5rem 0;
+  }
+
+  .ac-generated-page__header,
+  .ac-generated-page__section,
+  .ac-generated-page__notice {
+    margin-bottom: 2rem;
+  }
+
+  .ac-generated-page__eyebrow {
+    color: rgb(var(--ac-primary));
+    font-weight: var(--ac-font-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .ac-generated-page h1,
+  .ac-generated-page h2 {
+    color: var(--ac-text);
+  }
+
+  .ac-generated-page p {
+    color: var(--ac-text-muted);
+    line-height: var(--ac-leading-relaxed);
+  }
+
+  .ac-generated-page__notice {
+    border: 0.0625rem solid var(--ac-border-color);
+    border-radius: var(--ac-rounded-xl);
+    padding: 1rem;
+    background: var(--ac-bg-subtle);
+  }
+</style>
